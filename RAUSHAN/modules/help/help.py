@@ -25,7 +25,7 @@ async def module_help(client: Client, message: Message):
     if len(cmd) > 1:
         help_arg = " ".join(cmd[1:])
     elif not message.reply_to_message and len(cmd) == 1:
-        await message.edit("ᴀʟᴘʜᴀ ᴘᴀᴘᴀ ᴄᴏᴍɪɴɢ..😈")
+        await message.edit("𝗚𝗢𝗗 𝗙𝗔𝗧𝗛𝗘𝗥 𝗜𝗦 𝗖𝗢𝗠𝗜𝗡𝗚..😈")
         try:
             nice = await client.get_inline_bot_results(bot=bot_username, query="helper")
             await asyncio.gather(
@@ -38,13 +38,13 @@ async def module_help(client: Client, message: Message):
             print(f"{e}")
             ac = PrettyTable()
             ac.header = False
-            ac.title = "😈𝗔𝗟𝗣𝗛𝗔😈"
+            ac.title = "𝗬𝗢𝗨 𝗙𝗔𝗧𝗛𝗘𝗧 𝗜𝗦 𝗚𝗢𝗗 "
             ac.align = "l"
             for x in split_list(sorted(CMD_HELP.keys()), 2):
                 ac.add_row([x[0], x[1] if len(x) >= 2 else None])
             xx = await client.send_message(
                 message.chat.id,
-                f"```{str(ac)}```\n• @ll_ALPHA_BABY_lll × @WORLD_ALPHA •",
+                f"```{str(ac)}```\n• @lll_GOD_FATHER_PAPA_lll × @GOD_KI_DUNIYA •",
                 reply_to_message_id=ReplyCheck(message),
             )
             await xx.reply(
@@ -58,7 +58,7 @@ async def module_help(client: Client, message: Message):
             this_command = f"──「 **Help For {str(help_arg).upper()}** 」──\n\n"
             for x in commands:
                 this_command += f"  •  **Command:** `.{str(x)}`\n  •  **Function:** `{str(commands[x])}`\n\n"
-            this_command += "© @ll_ALPHA_BABY_lll"
+            this_command += "© @lll_GOD_FATHER_PAPA_lll"
             await edit_or_reply(
                 message, this_command, parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -85,7 +85,7 @@ async def module_helper(client: Client, message: Message):
         for x in split_list(sorted(CMD_HELP.keys()), 2):
             ac.add_row([x[0], x[1] if len(x) >= 2 else None])
         await edit_or_reply(
-            message, f"```{str(ac)}```\n• @ll_ALPHA_BABY_lll × @WORLD_ALPHA •"
+            message, f"```{str(ac)}```\n• @lll_GOD_FATHER_PAPA_lll × @GOD_KI_DUNIYA •"
         )
         await message.reply(
             f"**Usage**:`.help broadcast` **To View Module details**"
