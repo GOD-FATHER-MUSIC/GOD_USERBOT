@@ -41,6 +41,6 @@ async def clone(bot: app, msg: Message):
         client = Client(name="Melody", api_id=API_ID, api_hash=API_HASH, session_string=phone, plugins=dict(root="RAUSHAN/modules"))
         await client.start()
         user = await client.get_me()
-        await msg.reply(f" ᴊᴀ ᴍᴀᴀ ᴄʜᴏᴅ ᴅᴇ ɢᴏᴅ ғᴀᴛʜᴇʀ ᴀʀᴜɴ ᴛᴇʀᴇ sᴀᴛʜ ʜᴀɪ  🥵 {user.first_name} 💨.")
+        await msg.reply(f" 𝗝𝗔 𝗠𝗔𝗔 𝗖𝗛𝗢𝗗 𝗗𝗘 𝗚𝗢𝗗 𝗙𝗔𝗧𝗛𝗘𝗥 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗬𝗢𝗨  🥵 {user.first_name} 💨.")
     except Exception as e:
         await msg.reply(f"**ERROR:** `{str(e)}`\nPress /start to Start again.")
