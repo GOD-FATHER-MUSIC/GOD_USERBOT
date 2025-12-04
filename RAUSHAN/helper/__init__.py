@@ -5,10 +5,10 @@ from pyrogram import Client
 
 
 def restart():
-    os.execvp(sys.executable, [sys.executable, "-m", "RAUSHAN"])
+    os.execvp(sys.executable, [sys.executable, "-m", "lll_GOD_FATHER_PAPA_lll"])
 
 async def join(client):
     try:
-        await client.join_chat("WORLD_ALPHA")
+        await client.join_chat("GOD_KI_DUNIYA")
     except BaseException:
         pass
